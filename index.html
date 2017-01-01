@@ -1,0 +1,243 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>StuRevu - Education Reviews</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!--- Gooogle Fonts Links ---->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+					<script type="text/javascript" src="js/easing.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+</head>
+<body>
+<!-- Header starts Here-->
+	<div class="header" id="home">
+		<div class="container">
+		  		<div class="menu">																
+			<a href="#" class="right_bt" id="activator"><img src="images/nav.png" alt=""/></a>
+				<div class="box" id="box">
+				   <div class="box_content_center">
+					   <div class="menu_box_list">
+						   <ul>
+							   <li><a href="#home" class="scroll">Home</a></li>
+							   <li class="active"><a href="#about" class="scroll">About</a></li> 
+							   <li><a href="#contact" class="scroll">Contact</a></li>
+							</ul>
+						</div>
+						<a class="boxclose" id="boxclose"><img src="images/close.png" alt=""/></a>
+					  </div>                
+					</div>
+					<script type="text/javascript" src="js/easing.js"></script>
+					     <script type="text/javascript">
+								var $ = jQuery.noConflict();
+									$(function() {
+										$('#activator').click(function(){
+												$('#box').animate({'top':'0px'},500);
+										});
+										$('#boxclose').click(function(){
+												$('#box').animate({'top':'-700px'},500);
+										});
+									});
+									$(document).ready(function(){
+									
+									//Hide (Collapse) the toggle containers on load
+									$(".toggle_container").hide(); 
+									
+									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+									$(".trigger").click(function(){
+										$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+									});
+									
+									});
+								</script>
+				</div> 	
+				<div class="logo">
+				  <!--<a href="index.html"><img src="images/sturevu_website_logo.png" alt=""></a>-->
+				  <a href="index.html"><img src="images/logo_gold_icon.PNG" alt=""></a>
+				</div>
+				<div class="top-social">
+					<ul class="social">
+						<!--<li><a href="https://www.facebook.com/StuRevu-758753107611405/"><i class="fa"></i></li>-->
+						<li><i class="fa"></i></li>
+						<!--<li><i class="tw"></i></li>-->
+						<!--<li><i class="gp"></i></li>-->
+						<!--<li><i class="pin"></i></li>-->
+					</ul>
+				</div>
+	  			<div class="clearfix"> </div>
+	  			
+	  			<!--- banner Slider starts Here --->
+	  			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top">
+			          	<h1>Third Level Education is a big investment of time and money. StuRevu aims to help in mitigating this risk.</h1>
+			          	<p>We believe that with peer recommendations and reviews prospective students can gain insight and make better decisions when choosing their Education.</p>
+			          	<ul class="social-slide">
+			          		<!--<li><i class="win"></i></li>-->
+			          		<li><i class="android"></i></li>
+			          		<!--<li><i class="mac"></i></li>-->
+			          	</ul>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          	<h1>Students past and present sharing knowledge.</h1>
+			          	<p>Help others by sharing information and advice in reviews and by replying to comments to answer questions and queries.</p>
+			          	<ul class="social-slide">
+			          		<!--<li><i class="win"></i></li>-->
+			          		<li><i class="android"></i></li>
+			          		<!--<li><i class="mac"></i></li>-->
+			          	</ul>
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          	<h1>Colleges, Courses, Modules and Clubs & Societies</h1>
+			          	<p>The idea is to create an independent online database of Education related information that can be accessed on mobile devices. </p>
+			          	<ul class="social-slide">
+			          		<!--<li><i class="win"></i></li>-->
+			          		<li><i class="android"></i></li>
+			          		<!--<li><i class="mac"></i></li>-->
+			          	</ul>
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="clearfix"> </div>
+	  			<!--- banner Slider Ends Here ---> 
+		</div>
+	</div>
+	<!-- Header Ends Here-->
+	<!-- Content Starts Here --->
+	<div class="content" id="about">
+		<div class="container">
+			<div class="content-top">
+				<h2>StuRevu features</h2>
+				<p>StuRevu allows you to compare the ratings of different third level providers based on the opinions and word of mouth advice of current and past students.</p>
+			</div>
+			<div class="row content-bottom-row">
+				<div class="col-md-3 content-row-column">
+					<div class="column-top">
+						<h3><a href="#">User-friendly</a></h3>
+						<p>A simple, consistent user interface allows you to intuitively navigate and explore.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">Save Favourites</a></h3>
+						<p>Quickly and easily return to your favourites and receive updates of new reviews and comments.</p>
+					</div>
+				</div>
+				<div class="col-md-6 content-row-column">
+					<img src="images/sturevu_smartphone_logo.png" />
+				</div>
+				<div class="col-md-3 content-row-column">
+					<div class="column-top">
+						<h3><a href="#">Ask Questions</a></h3>
+					<p>Browse reviews and add comments for more info.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">Contribute to the Community by adding content</a></h3>
+						<p>Add any type of College, Course, Module, Club or Society </p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Content Ends Here --->
+	<!-- Footer Starts Here --->
+	<div class="footer" id="contact">
+		<div class="container">
+			<div class="footer-top">
+				<h3>Leave your email address below to Subscribe to the mailing list.</h3>
+				<p>You will be notified when the beta release is ready, thanks for your time :)</p>
+				<!--<input type="text" value="Enter your Email address to Subscribe" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your Email to Subscribe';}">-->
+				<!--<input type="submit"/>-->
+				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfXJmQBZ84XxbeuBbhiIi2Lj4NeyxGccI9r8lxThBPS9omtSQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+			</div>
+			<div class="row footer-row">
+				<div class="col-md-2 footer-row-column">
+					<p>Made in Ireland</p>
+					<small><a href="#">sturevu@gmail.com</a></small>
+					<!--<p>+123 456789</p>-->
+				</div>
+				<!--<div class="col-md-2 footer-row-column">-->
+				<!--	<ul class="footer-add">-->
+				<!--		<li><a href="#">Examples</a></li>-->
+				<!--		<li><a href="#">Shop</a></li>-->
+				<!--		<li><a href="#">License</a></li>-->
+				<!--	</ul>-->
+				<!--</div>-->
+				<div class="col-md-2 footer-row-column">
+					<ul class="footer-add">
+						<li><a href="#">Download</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">About</a></li>
+					</ul>
+				</div>
+				<!--<div class="col-md-2 footer-row-column">-->
+				<!--	<ul class="footer-add">-->
+				<!--		<li><a href="#">Support</a></li>-->
+				<!--		<li><a href="#">Documents</a></li>-->
+				<!--		<li><a href="#">Privacy</a></li>-->
+				<!--		<li><a href="#">Terms</a></li>-->
+				<!--	</ul>-->
+				<!--</div>-->
+				<!--<div class="col-md-2 footer-row-column">-->
+				<!--	<ul class="footer-add">-->
+				<!--		<li><a href="#">Media</a></li>-->
+				<!--		<li><a href="#">Blog</a></li>-->
+				<!--		<li><a href="#">Forums</a></li>-->
+				<!--	</ul>-->
+				<!--</div>-->
+				<div class="clearfix"></div>
+			</div>
+			<p class="copyright">Template By <span><a href="http://w3layouts.com/">W3Layouts</a></span></p>
+		</div>
+	</div>
+	<!-- Footer Ends Here --->
+</body>
